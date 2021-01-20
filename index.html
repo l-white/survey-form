@@ -1,0 +1,57 @@
+<div class="container">
+<h1 id="title">Survey</h1>
+<p id="description">How was your experience using <a href="https://youcanlearnhowtocode.com" target="_blank">You Can Learn How to Code</a>?</p>
+<form id="survey-form" >
+  <div class="form-element">
+  <label id="name-label" for="name">Name: *</label>
+  <input type="text" id="name" class="input" required placeholder="Enter your name">
+  </div>
+  <div>
+  <label id="email-label" for="email"> Email: *</label>
+  <input type="email" id="email" class="input" required placeholder="Enter your email address">
+ </div>
+  <div>
+    <label id="number-label" for="age">Age: *</label>
+    <input type="number" name="age" id="number" class="input" min="10" max="105" required placeholder="Enter your age">
+  </div>
+  <label id="phone-number-label" for="phone-number">Phone Number:</label>
+  <input type="tel" id="phone-number" class="input" placeholder="Enter your phone number (Optional)">
+  <div id="dropdown">
+    <p>What is your current employment status?</p>
+    <select>
+      <option value="fulltime">Employed Full Time</option>
+      <option value="parttime">Employed Part Time</option>
+      <option value="student">Student</option>
+      <option value="unemplooyed">Not Employed</option>
+    </select>
+  </div>
+  <div id="checkbox">
+    <p>Which programming language(s) are you most interested in learning?</p>
+    <label class="checkbox"><input type="checkbox" name="programming-languages" value="HTML">HTML</label>
+    <label class="checkbox"><input type="checkbox" name="programming-languages" value="CSS">CSS</label>
+    <label class="checkbox"><input type="checkbox" name="programming-languages" value="JavaScript">JavaScript</label>
+    <label class="checkbox"><input type="checkbox" name="programming-languages" value="PHP">PHP</label>
+    <label class="checkbox"><input type="checkbox" name="programming-languages" value="Python">Python</label>
+    <label class="checkbox"><input type="checkbox" name="programming-languages" value="Java">Java</label>
+    <label class="checkbox"><input type="checkbox" name="programming-languages" value="C# .NET">C# .NET</label>
+    <label class="checkbox"><input type="checkbox" name="programming-languages" value="C/C++">C/C++</label>
+  </div>
+    <div id="radio">
+      <p>How likely are you to recommend <a href="https://youcanlearnhowtocode.com" target="_blank">You Can Learn How to Code</a> to a Friend?</></p>
+      <div>
+        <label class="radio"><input type="radio" name="recommendation" value="verylikely">Very likely</label></div>
+      <div>
+      <label class="radio"><input type="radio" name="recommendation" value="possibly">Possibly</label>
+      </div>
+      <div>
+      <label class="radio"><input type="radio" name="recommendation" value="notlikely">Not likely</label>
+      </div>
+    </div>
+    <div>
+      <label class="label" for="comments">Comments:</label>
+      <textarea id="comments" class="textarea-input" placeholder="Enter additional comments (Optional)"></textarea>
+    </div>
+  <button id="submit">Submit</button>
+</form>
+</div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
